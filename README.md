@@ -15,7 +15,7 @@ Cette application de liste de tâches simple est construite avec Ionic et React.
 ## 🛠️ Installation
 1. **Clonez le dépôt sur votre machine locale :**
     ```bash
-    git clone [[url_du_depot](https://github.com/NordyFly/Ionic_Task.git)]
+    git clone https://github.com/NordyFly/Ionic_Task.git
     ```
 
 2. **Accédez au répertoire du projet :**
