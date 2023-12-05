@@ -63,13 +63,16 @@ L'application suppose la présence d'un serveur JSON s'exécutant localement à 
 - L'application suppose une API RESTful pour la gestion des tâches.
 
 ## 📄 Licence
-Ce projet est sous licence [MIT](LICENSE). N'hésitez pas à le modifier et à l'utiliser pour vos propres projets.
+Ce projet est sous licence [MIT](LICENSE).
 
-## 💖 Remerciements
+## 💖 Résumé
 - Ce projet a été créé avec les frameworks Ionic et React.
 - RxJS est utilisé pour gérer les opérations asynchrones.
-- Merci à la communauté pour ses contributions et son soutien.
+  
+## 🚀 Auteur
 
-N'hésitez pas à contribuer au projet ou à fournir des commentaires !
+- [@NordyFly](https://github.com/NordyFly)
+
+
 
 ---
