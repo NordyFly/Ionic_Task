@@ -20,7 +20,7 @@ Cette application de liste de tâches simple est construite avec Ionic et React.
 
 2. **Accédez au répertoire du projet :**
     ```bash
-    cd [repertoire_du_projet]
+    cd [Mettez_vous_sur_le_repertoire_du_projet]
     ```
 
 3. **Installez les dépendances :**
