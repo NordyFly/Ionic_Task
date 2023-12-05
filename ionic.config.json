@@ -1,0 +1,7 @@
+{
+  "name": "taskList",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
