@@ -4,7 +4,7 @@
 
 ## 🚀 Aperçu
 Cette application de liste de tâches simple est construite avec Ionic et React. Elle permet aux utilisateurs de gérer leurs tâches en les ajoutant, les complétant, les invalidant et les supprimant. L'application utilise RxJS pour gérer les opérations asynchrones et récupérer des données à partir d'une API.
-
+![Texte alternatif](asset/aperçu.png "Le titre de mon image")
 ## 🌟 Fonctionnalités
 - Ajouter une nouvelle tâche à la liste.
 - Marquer une tâche comme complétée ou invalidée.
