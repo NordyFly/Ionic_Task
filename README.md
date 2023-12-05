@@ -52,6 +52,7 @@ L'application suppose la présence d'un serveur JSON s'exécutant localement à 
     }
     ```
     ou voici avec 4 données
+    ```json
     {
   "tasks": [
     {
@@ -76,6 +77,7 @@ L'application suppose la présence d'un serveur JSON s'exécutant localement à 
     }
   ]
 }
+ ```
 
 3. **Démarrez le serveur JSON :**
     ```bash
