@@ -1,0 +1,54 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Faire les courses",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Répondre aux e-mails",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Apprendre React",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Faire de l'exercice",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Lire un livre",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "title": "Préparer le dîner",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "title": "Regarder un film",
+      "completed": false
+    },
+    {
+      "id": 8,
+      "title": "Écrire du code",
+      "completed": true
+    },
+    {
+      "id": 9,
+      "title": "Faire du jardinage",
+      "completed": false
+    },
+    {
+      "id": 10,
+      "title": "Planifier des vacances",
+      "completed": false
+    }
+  ]
+}
