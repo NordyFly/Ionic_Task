@@ -51,33 +51,6 @@ L'application suppose la présence d'un serveur JSON s'exécutant localement à 
       "tasks": []
     }
     ```
-    ou voici avec 4 données
-    ```json
-    {
-  "tasks": [
-    {
-      "id": 1,
-      "title": "Faire les courses",
-      "completed": true
-    },
-    {
-      "id": 2,
-      "title": "Répondre aux e-mails",
-      "completed": false
-    },
-    {
-      "id": 3,
-      "title": "Apprendre React",
-      "completed": true
-    },
-    {
-      "id": 4,
-      "title": "Faire de l'exercice",
-      "completed": false
-    }
-  ]
-}
- ```
 
 3. **Démarrez le serveur JSON :**
     ```bash
