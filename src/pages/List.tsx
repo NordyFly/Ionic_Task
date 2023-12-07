@@ -13,7 +13,7 @@ import {
   IonTitle,
 } from '@ionic/react';
 import { from, Subject } from 'rxjs';
-import { takeUntil, tap } from 'rxjs/operators';
+import { switchMap, takeUntil, tap } from 'rxjs/operators';
 
 import './List.css';
 
@@ -32,16 +32,15 @@ const List: React.FC = () => {
 
   // Effet qui se déclenche lors du montage du composant
   useEffect(() => {
-    // Observable pour récupérer les tâches depuis db.json
-    const fetchData$ = from(fetchTasks()).pipe(
+    // Observable pour récupérer les tâches et switchMap pour gérer la réponse
+    const fetchData$ = from(fetch('http://localhost:3001/tasks')).pipe(
+      switchMap(response => from(response.json())), // passer à le nouvel observable créé à partir de response.json()
       takeUntil(destroy$),
       tap(updateTaskLists)
     );
 
-    // Souscrire à l'observable pour récupérer les tâches
     fetchData$.subscribe();
 
-    // Nettoyer l'observable lors du démontage du composant
     return () => {
       destroy$.next();
       destroy$.complete();
@@ -243,8 +242,7 @@ const List: React.FC = () => {
                 {task.completed ? 'Invalider' : 'Valider'}
               </IonButton>
               {/* Bouton pour supprimer la tâche */}
-              <IonButton color= "danger" onClick={() => handleDeleteTask(task.id, false)}>Supprimer</IonButton>
-       
+              <IonButton color="danger" onClick={() => handleDeleteTask(task.id, false)}>Supprimer</IonButton>
             </IonItem>
           ))}
         </IonList>
@@ -260,10 +258,8 @@ const List: React.FC = () => {
               <IonLabel className={task.completed ? 'completed-task' : ''} onDoubleClick={() => handleDoubleClick(task.id, true)}>
                 {task.title}
               </IonLabel>
-
               {/* Bouton pour invalider la tâche complétée */}
-              <IonButton color="warning" onClick={() => handleInvalidateTask(task.id)}>Invalider</IonButton>                            
-
+              <IonButton color="warning" onClick={() => handleInvalidateTask(task.id)}>Invalider</IonButton>
             </IonItem>
           ))}
         </IonList>

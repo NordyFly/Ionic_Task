@@ -3,17 +3,12 @@
     {
       "id": 1,
       "title": "Faire les courses",
-      "completed": true
+      "completed": false
     },
     {
       "id": 2,
       "title": "Répondre aux e-mails",
       "completed": false
-    },
-    {
-      "id": 3,
-      "title": "Apprendre React",
-      "completed": true
     },
     {
       "id": 4,
@@ -23,7 +18,7 @@
     {
       "id": 5,
       "title": "Lire un livre",
-      "completed": true
+      "completed": false
     },
     {
       "id": 6,
@@ -33,7 +28,7 @@
     {
       "id": 7,
       "title": "Regarder un film",
-      "completed": false
+      "completed": true
     },
     {
       "id": 8,
